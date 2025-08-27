@@ -25,26 +25,28 @@
 
     <Button
         android:id="@+id/buscarCerveja"
-        android:layout_width="209dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="226dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="84dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Buscar Cervejas"
-        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:backgroundTint="#5B4CAF50"
+        app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+        app:layout_constraintTop_toBottomOf="@id/resultado"
+        app:layout_constraintVertical_bias="0.744"
+        app:strokeColor="#4CAF50"
+        app:strokeWidth="2dp" />
 
     <TextView
         android:id="@+id/tile2"
         android:layout_width="393dp"
         android:layout_height="41dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="191dp"
+        android:layout_marginTop="192dp"
         android:layout_marginEnd="8dp"
         android:background="#8BC34A"
         android:padding="6dp"
@@ -52,19 +54,26 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/caixaSelecao"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/title1" />
+        app:layout_constraintTop_toTopOf="@+id/title1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/caixaSelecao"
         android:layout_width="393dp"
         android:layout_height="35dp"
+        android:layout_marginTop="221dp"
         android:layout_marginBottom="16dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/title1"
-        tools:layout_editor_absoluteX="10dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/resultado"
